@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .font-babas{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
   </head>
   <body>
-    <header class="bg-[#FFFBF0] px-32">
+    <header class="bg-[#FFFBF0] py-20 px-4 md:px-32">
       <nav></nav>
-      <div class="flex justify-between items-center">
-        <div>
-          <h1 class="text-7xl uppercase">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="space-y-3">
+          <h1 class="text-7xl uppercase font-babas">
             <span class="text-[#FABE4C]">Be the Penguins</span>
             <br />
             of Winter
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button
-            class="py-4 px-9 bg-blue-500 rounded-xl text-white font-medium"
+            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] ... text-white font-medium rounded-xl"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,5 +55,10 @@
       </div>
       <div></div>
     </header>
+    <main>
+        <section class="py-12">
+            <h3 class="text-5xl font-babas">Woman Jackets</h3>
+        </section>
+    </main>
   </body>
 </html>
